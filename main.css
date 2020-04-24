@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*----------- BODY --------------*/
+body {
+
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    width: 100%;
+}
+
+/*----------- HEADER --------------*/
+
+header {
+    background-color: #6495ED;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    width: 100%;
+   
+}
+header h1 a{ 
+    font-family: 'Lora', serif;
+    font-weight: 300;
+    font-style: bold;
+    text-decoration: none;
+    color: #FAEBD7;
+}
+header h1 {
+    text-align: right;
+}
+
+/*----------- NAVIGATION --------------*/
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    padding: .5rem .5rem;
+    color: #FAEBD7;
+    text-decoration: none;
+    text-align: right;
+  
+
+}
+nav ul li.active a { color: #DEB887;}
+
+
+nav ul li a:hover {color: white;}
+
+
+
+/*----------- MAIN --------------*/
+
+
+main {
+    
+    background-color: #faebd7;
+
+}
+main h2 a { 
+    font-family: 'Lora', serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    
+}
+main article  {
+    border: 1px none;
+    box-shadow: 2px 3px rgb(231, 224, 224);
+    background-color: white;
+    padding: 2rem;
+    margin: .8rem;
+}
+figure {
+    margin: 0;
+    padding: 0;
+}
+main img {
+    width: 240px;
+}
+/*----------- Medium Css --------------*/
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 40rem) {
+
+}
+
+
+
+/*----------- Large Css --------------*/
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+}

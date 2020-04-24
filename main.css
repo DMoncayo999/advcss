@@ -49,8 +49,9 @@ nav ul li a {
     text-align: right;
  }
 
-
-nav ul li.active a { color: #DEB887;}
+nav ul li.active a {
+    color: #DEB887;
+}
 
 
 nav ul li a:hover {
@@ -124,7 +125,7 @@ main img {
 /*----------- Medium Css --------------*/
 /* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 40rem) {
-
+ 
 }
 
 
@@ -132,5 +133,8 @@ main img {
 /*----------- Large Css --------------*/
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64rem) {
+    
+       
+
 
 }

@@ -15,6 +15,7 @@ body {
     width: 100%;
 }
 
+
 /*----------- HEADER --------------*/
 
 header {
@@ -23,16 +24,19 @@ header {
     width: 100%;
    
 }
-header h1 a{ 
+header h1 a { 
     font-family: 'Lora', serif;
     font-weight: 300;
     font-style: bold;
     text-decoration: none;
     color: #FAEBD7;
 }
+
 header h1 {
     text-align: right;
 }
+
+
 
 /*----------- NAVIGATION --------------*/
 
@@ -49,17 +53,14 @@ nav ul li a {
     text-align: right;
  }
 
-nav ul li.active a {
-    color: #DEB887;
-}
-
-
 nav ul li a:hover {
     color: white;
     text-decoration: underline;
 }
 
-
+nav ul li a:active {
+    color:#DEB887;      
+}
 
 /*----------- MAIN --------------*/
 main {
@@ -68,19 +69,28 @@ main {
 
 }
 
-article a { 
+main article  {
+    border: 1px none;
+    box-shadow: 2px 3px rgb(231, 224, 224);
+    background-color: white;
+    padding: 2rem;
+    margin: .8rem;
+}
+
+article h2 a { 
     font-family: 'Lora', serif;
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
 }
-article h2.active a {
-    color: #DEB887;      
-}
 
 article h2 a:hover {
     color: #6495ED;
     text-decoration: underline;
+}
+
+article h2 a:active {
+    color:#DEB887;      
 }
 
 article p a { 
@@ -89,20 +99,13 @@ article p a {
     color: #6495ED;
     font-size: 1rem;
 }
-article p.active a {
-    color: #DEB887;      
-}
 
 article p a:hover {
     text-decoration: underline;
 }
 
-main article  {
-    border: 1px none;
-    box-shadow: 2px 3px rgb(231, 224, 224);
-    background-color: white;
-    padding: 2rem;
-    margin: .8rem;
+article p a:active {
+    color: #DEB887;      
 }
 .post-content h2 {
     margin: 0;
@@ -113,7 +116,6 @@ div.post-date {
     color: gray;
     margin: 0;
     padding: 0;
-    
 }
 figure {
     margin: 1rem;
@@ -133,8 +135,19 @@ main img {
 /*----------- Large Css --------------*/
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64rem) {
-    
-       
+body div:nth-child(1) {
+    display: flex;
+    position: relative;
+}
 
+header { 
+    flex: 1;
+}
+header h1 nav {
+    position: fixed;    
+}
+main {
+    flex: 3;
+}
 
 }
